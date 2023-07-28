@@ -1,5 +1,4 @@
 import type { LanguageService, server } from "typescript/lib/tsserverlibrary";
-import { DiagnosticWithLocation } from "typescript";
 
 function init(modules: { typescript: typeof import("typescript/lib/tsserverlibrary") }) {
 	const ts = modules.typescript;
