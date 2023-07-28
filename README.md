@@ -12,15 +12,15 @@ npm install missing-native-js-syntax
 
 ###### Add this plugin to your `tsconfig.json` file
 
+
 ```json
 {
-	"compilerOptions": {
-		"plugins": [
-			{ "transform": "missing-native-js-syntax", "transformProgram": true },
-			//
-			{ "transform": "missing-native-js-syntax" }
-		]
-	}
+  "compilerOptions": {
+    "plugins": [
+      { "transform": "missing-native-js-syntax", "transformProgram": true },
+      { "transform": "missing-native-js-syntax" }
+    ]
+  }
 }
 ```
 
