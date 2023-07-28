@@ -1,9 +1,13 @@
-# Missing Native JavaScript Syntax
-
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![Github Actions CI][github-actions-ci-src]][github-actions-ci-href]
 [![License][license-src]][license-href]
+
+<h1 align="center">Missing Native
+	<img width="24" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
+	Syntax</h1>
+<p align="center">A small JavaScript utility library delivering <b>missing</b> native syntax, using a TypeScript transformer and bundling plugins</p>
+
 
 This repository contains a collection of missing native JavaScript syntax additions. The syntax is implemented as a TypeScript transformer and as a Babel plugin.
 
