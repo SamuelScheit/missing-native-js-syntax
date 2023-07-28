@@ -1,16 +1,28 @@
-# Missing Native Javascript Syntax
+[![npm version][npm-version-src]][npm-version-href]
+[![npm downloads][npm-downloads-src]][npm-downloads-href]
+[![Github Actions CI][github-actions-ci-src]][github-actions-ci-href]
+[![License][license-src]][license-href]
 
-This repository contains a collection of missing native Javascript syntax additions. The syntax is implemented as a Typescript transformer and as a Babel plugin.
+<h1 align="center">Missing Native
+	<img width="24" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
+	Syntax</h1>
+
+This repository contains a collection of missing native JavaScript syntax additions. The syntax is implemented as a TypeScript transformer and as a Babel plugin.
 
 ## Installation
 
-```
+```sh
+
+# Using npm
 npm install missing-native-js-syntax
+
+# Using yarn
+yarn add missing-native-js-syntax
 ```
 
-### Typescript
+### TypeScript
 
-###### Add this plugin to your `tsconfig.json` file
+#### Add this plugin to your `tsconfig.json` file
 
 
 ```json
@@ -24,15 +36,13 @@ npm install missing-native-js-syntax
 }
 ```
 
-To add syntax highlighting support in your editor, you need to use the typescript version of your project. If you are using VSCode, you can open the command palette (<kbd>Ctrl+Shift+P</kbd> or <kbd>F1</kbd>) and choose `TypeScript: Select TypeScript Version`. Then click `Use Workspace Version`.
+To add syntax highlighting support in your editor, you need to use the TypeScript version of your project. If you are using VSCode, you can open the command palette (<kbd>Ctrl+Shift+P</kbd> or <kbd>F1</kbd>) and choose `TypeScript: Select TypeScript Version`. Then click `Use Workspace Version`.
 
-### Babel
+## Usage
 
-_TODO_
+### if-return
 
-## if-return
-
-### Example
+#### Example
 
 The `createUser` function is responsible for the creation of a new user. It accepts a user object as input and verifies the existence of the user (or an admin) in the system. If the user (or an admin) is found, the function returns the existing record; otherwise, it adds the user to the users array and returns the newly created user.
 
@@ -70,9 +80,9 @@ function createUser(user) {
 }
 ```
 
-## Defer
+### Defer
 
-### Example
+#### Example
 
 <!-- database/file closing -->
 
@@ -136,6 +146,17 @@ function getUserRoles(path) {
 
 To enhance code readability and ensure proper resource management, the defer pattern can be implemented. This approach allows the createUsers function to automatically close the database connection when it returns, regardless of whether it completes successfully or throws an error. By using the defer pattern, you can defer (delay) the execution of a statement until the surrounding function returns.
 
-## Match
+### Match
 
 _TODO_
+
+<!-- Badges -->
+
+[npm-version-src]: https://img.shields.io/npm/v/missing-native-js-syntax/latest.svg
+[npm-version-href]: https://npmjs.com/package/missing-native-js-syntax
+[npm-downloads-src]: https://img.shields.io/npm/dt/missing-native-js-syntax.svg
+[npm-downloads-href]: https://npmjs.com/package/missing-native-js-syntax
+[github-actions-ci-src]: https://github.com/intevel/missing-native-js-syntax/actions/workflows/ci.yml/badge.svg
+[github-actions-ci-href]: https://github.com/intevel/missing-native-js-syntax/actions?query=workflow%3Aci
+[license-src]: https://img.shields.io/npm/l/missing-native-js-syntax.svg
+[license-href]: https://npmjs.com/package/missing-native-js-syntax

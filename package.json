@@ -1,19 +1,24 @@
 {
-	"name": "missing-native-js-syntax",
-	"version": "1.0.0",
-	"main": "./dist/vscode/index.js",
-	"license": "MIT",
-	"dependencies": {
-		"@babel/core": "^7.22.9",
-		"missing-native-js-syntax": "file:.",
-		"ts-patch": "^3.0.2",
-		"typescript": "^5.1.6"
-	},
-	"scripts": {
-		"prepare": "ts-patch patch tsserverlibrary.js && ts-patch patch tsserver.js && ts-patch patch tsc.js && ts-patch patch typescript.js && ts-patch check",
-		"build": "tsc"
-	},
-	"devDependencies": {
-		"@types/node": "^20.4.5"
-	}
+  "name": "missing-native-js-syntax",
+  "version": "1.0.0",
+  "main": "./dist/vscode/index.js",
+  "license": "MIT",
+  "author": "Samuel Scheit <github@samuelscheit.com>",
+  "description": "Collection of missing native JavaScript syntax additions",
+  "dependencies": {
+    "@babel/core": "^7.22.9",
+    "missing-native-js-syntax": "file:.",
+    "ts-patch": "^3.0.2",
+    "typescript": "^5.1.6"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepare": "ts-patch patch tsserverlibrary.js && ts-patch patch tsserver.js && ts-patch patch tsc.js && ts-patch patch typescript.js && ts-patch check",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.5"
+  }
 }
