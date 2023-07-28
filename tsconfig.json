@@ -1,0 +1,14 @@
+{
+	"include": ["src/**/*.ts"],
+	"compilerOptions": {
+		"plugins": [
+			{ "transform": "./dist/typescript/transformProgram.js", "transformProgram": true },
+			{ "transform": "./dist/typescript/transformFiles.js" },
+			{ "name": "missing-native-js-syntax" }
+		],
+		"outDir": "dist",
+		"esModuleInterop": true,
+		"target": "es2017",
+		"module": "commonjs"
+	}
+}
